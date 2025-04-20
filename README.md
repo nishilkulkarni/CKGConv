@@ -7,14 +7,14 @@ This repository contains an unofficial implementation of CKGConv, a customizable
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/ckgnet-pipeline.git
-cd ckgnet-pipeline
+git clone https://github.com/nishilkulkarni/CKGConv.git
+cd CKGConv
 pip install -r requirements.txt
 ```
 
 ## Usage
 
-### Prepare a YAML config file
+### Load a pre-existing/Create a YAML config file
 
 Example `config.yaml`:
 
@@ -58,28 +58,8 @@ python main.py --config config.yaml
 Launch TensorBoard to visualize logs:
 
 ```bash
-tensorboard --logdir runs/
+tensorboard --logdir results
 ```
-
-## Project Structure
-
-```
-ckgnet-pipeline/
-├── main.py
-├── models/
-│   └── ckgnet_best_model.pt
-├── configs/
-│   └── config.yaml
-├── requirements.txt
-└── README.md
-```
-
-## Example Results
-
-- Best Validation Accuracy: 89.23% at epoch 78
-- Test Accuracy: 88.50%
-- Test F1 Score: 0.8723
-- Test Average Precision: 0.9041
 
 ## License
 
