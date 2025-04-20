@@ -19,7 +19,7 @@ from sklearn.metrics import f1_score, average_precision_score, roc_auc_score
 import warnings 
 import itertools, copy
 import random 
-from utils.utility import RRWPPositionalEncoding, CosineWarmupScheduler
+from CKGConv.utils.utility import RRWPPositionalEncoding, CosineWarmupScheduler
 
 
 class FeatureModulator(nn.Module):
