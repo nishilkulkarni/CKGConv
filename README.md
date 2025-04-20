@@ -50,7 +50,7 @@ dataset_type: 'pattern'
 ### Run training
 
 ```bash
-python main.py --config config.yaml
+python main.py --config configs/mnist.yaml
 ```
 
 ## TensorBoard
@@ -58,7 +58,7 @@ python main.py --config config.yaml
 Launch TensorBoard to visualize logs:
 
 ```bash
-tensorboard --logdir results
+tensorboard --logdir results_{dataset_name}_{timestamp}
 ```
 
 ## License
