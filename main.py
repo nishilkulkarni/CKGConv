@@ -20,9 +20,9 @@ import warnings
 import itertools, copy
 import random 
 import argparse
-from utils.utility import load_datasets, load_yaml_as_namespace
-from models.ckgnet import CKGNet
-from utils.trainer import train, evaluate
+from CKGConv.utils.utility import load_datasets, load_yaml_as_namespace
+from CKGConv.model.ckgnet import CKGNet
+from CKGConv.utils.trainer import train, evaluate
 
 
 def main(config_path):
