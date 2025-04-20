@@ -1,0 +1,31 @@
+dataset: "CLUSTER"
+dataset_type: "cluster"
+task: "classification"
+task_type: "node"
+
+batch_size: 16
+hidden_channels: 54
+num_layers: 16
+pe_dim: 32
+ffn_ratio: 4
+pooling: "mean"
+norm_type: "batch"
+aggr: "mean"
+
+lr: 0.0001
+dropout: 0.2
+weight_decay: 0
+epochs: 200
+patience: 25
+warmup_epochs: 5
+min_lr: 1e-6
+
+device: 0
+seed: 42
+save_model: true
+model_path: "models/ckgnet_best.pt"
+
+log_dir: "results"
+
+pe_type: "random_walk"
+noise_val: 0
